@@ -19,6 +19,7 @@ class _DashboardState extends State<Dashboard> {
   final PageStorageBucket bucket = PageStorageBucket();
 
   Widget currentScreen = Home();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +46,7 @@ class _DashboardState extends State<Dashboard> {
           ),
         ],
       ),
+      body: PageStorage(bucket: bucket, child: currentScreen),
     );
   }
 }
