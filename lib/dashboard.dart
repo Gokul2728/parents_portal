@@ -12,7 +12,7 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  var _currentIndex = 0;
+  var _currentIndex = 1;
 
   List<Widget> screen = [Home(), Result(), Achievements()];
 
