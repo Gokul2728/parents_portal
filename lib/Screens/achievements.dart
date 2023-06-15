@@ -10,8 +10,10 @@ class Achievements extends StatefulWidget {
 class _AchievementsState extends State<Achievements> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('data'),
+    return Center(
+      child: Container(
+        child: Text('data'),
+      ),
     );
   }
 }

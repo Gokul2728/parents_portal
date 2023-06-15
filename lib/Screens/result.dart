@@ -10,8 +10,10 @@ class Result extends StatefulWidget {
 class _ResultState extends State<Result> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('data'),
+    return Center(
+      child: Container(
+        child: Text('data'),
+      ),
     );
   }
 }
