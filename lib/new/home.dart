@@ -227,17 +227,17 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 "Income",
                                 style: TextStyle(
                                     color: Colors.grey,
                                     fontWeight: FontWeight.bold),
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 width: 10,
                               ),
-                              const Icon(
+                              Icon(
                                 Icons.arrow_upward,
                                 color: Color(0XFF00838F),
                               )
@@ -257,17 +257,17 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 "Expenses",
                                 style: TextStyle(
                                     color: Colors.grey,
                                     fontWeight: FontWeight.bold),
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 width: 10,
                               ),
-                              const Icon(
+                              Icon(
                                 Icons.arrow_downward,
                                 color: Color(0XFF00838F),
                               )
