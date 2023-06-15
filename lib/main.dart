@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:parents_portal/home.dart';
+import 'package:parents_portal/dashboard.dart';
 
 void main() {
   runApp(const Main());
@@ -11,7 +11,7 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Home(),
+      home: Dashboard(),
     );
   }
 }
