@@ -25,6 +25,13 @@ class _HomePageState extends State<HomePage> {
           Column(
             children: [
               Container(
+                height: 20,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: [Color(0XFF00B686), Color(0XFF00838F)]),
+                ),
+              ),
+              Container(
                 height: 300,
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
@@ -36,23 +43,20 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: const [
                           Icon(
                             Icons.menu,
                             color: Colors.white,
                           ),
+                          SizedBox(width: 20),
                           Text(
                             "Dashboard",
                             style: TextStyle(
-                              fontSize: 18.0,
+                              fontSize: 20,
                               fontWeight: FontWeight.w600,
                               color: Colors.white,
                             ),
-                          ),
-                          Icon(
-                            Icons.notifications,
-                            color: Colors.white,
                           ),
                         ],
                       ),

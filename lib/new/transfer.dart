@@ -22,13 +22,13 @@ class _TransferPageState extends State<TransferPage> {
       body: Stack(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 30, right: 30, top: 30),
-            color: Color(0XFF00B686),
+            padding: const EdgeInsets.only(left: 30, right: 30, top: 30),
+            color: const Color(0XFF00B686),
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.menu,
                       color: Colors.white,
@@ -47,7 +47,7 @@ class _TransferPageState extends State<TransferPage> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -70,24 +70,24 @@ class _TransferPageState extends State<TransferPage> {
                 Container(
                   height: 150,
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.only(left: 30, right: 30, top: 30),
+                  padding: const EdgeInsets.only(left: 30, right: 30, top: 30),
                   decoration: BoxDecoration(
                       color: Colors.grey[100],
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(40),
                         topRight: Radius.circular(40),
                       )),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Recent",
                         style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Colors.grey),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
                       Expanded(
@@ -112,12 +112,12 @@ class _TransferPageState extends State<TransferPage> {
                 ),
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 30.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 30.0),
                     width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(color: Colors.white),
+                    decoration: const BoxDecoration(color: Colors.white),
                     child: ListView(
                       children: [
-                        Text(
+                        const Text(
                           "Contact",
                           style: TextStyle(
                               fontSize: 18,
@@ -125,8 +125,8 @@ class _TransferPageState extends State<TransferPage> {
                               color: Colors.grey),
                         ),
                         Container(
-                          padding: EdgeInsets.symmetric(vertical: 8),
-                          child: TextField(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: const TextField(
                             decoration: InputDecoration(
                               prefixIcon: Icon(Icons.search,
                                   size: 30, color: Colors.grey),
@@ -135,7 +135,7 @@ class _TransferPageState extends State<TransferPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         buildContactRow("Joanna Kingsman", "+236254122",
@@ -164,7 +164,7 @@ class _TransferPageState extends State<TransferPage> {
 
   Container buildContactRow(String name, String phone, String url) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 12),
+      padding: const EdgeInsets.symmetric(vertical: 12),
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(width: 1, color: Colors.grey.shade200),
@@ -179,7 +179,7 @@ class _TransferPageState extends State<TransferPage> {
                 backgroundImage: NetworkImage(url),
                 radius: 25,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               Column(
@@ -187,27 +187,27 @@ class _TransferPageState extends State<TransferPage> {
                 children: [
                   Text(
                     name,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.phone,
                         color: Colors.grey,
                         size: 16,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         phone,
-                        style: (TextStyle(
+                        style: (const TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.grey,
                         )),
@@ -225,7 +225,7 @@ class _TransferPageState extends State<TransferPage> {
               color: Colors.greenAccent.withOpacity(0.2),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Icon(
+            child: const Icon(
               Icons.arrow_forward_ios,
               size: 20,
               color: Colors.green,
@@ -238,7 +238,7 @@ class _TransferPageState extends State<TransferPage> {
 
   Container buildRecentContact(String name, String url) {
     return Container(
-      margin: EdgeInsets.only(right: 30),
+      margin: const EdgeInsets.only(right: 30),
       child: Column(
         children: [
           Container(
@@ -255,12 +255,12 @@ class _TransferPageState extends State<TransferPage> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Text(
             name,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 10, fontWeight: FontWeight.bold, color: Colors.grey),
           )
         ],
@@ -281,9 +281,9 @@ class _TransferPageState extends State<TransferPage> {
         children: [
           Icon(
             icon,
-            color: isActive ? Color(0XFF00B686) : Colors.white,
+            color: isActive ? const Color(0XFF00B686) : Colors.white,
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Text(
@@ -291,7 +291,7 @@ class _TransferPageState extends State<TransferPage> {
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.bold,
-              color: isActive ? Color(0XFF00B686) : Colors.white,
+              color: isActive ? const Color(0XFF00B686) : Colors.white,
             ),
           )
         ],
@@ -311,16 +311,18 @@ class _TransferPageState extends State<TransferPage> {
         height: 60,
         decoration: index == _selectedItemIndex
             ? BoxDecoration(
-                border:
-                    Border(bottom: BorderSide(width: 4, color: Colors.green)),
+                border: const Border(
+                    bottom: BorderSide(width: 4, color: Colors.green)),
                 gradient: LinearGradient(colors: [
                   Colors.green.withOpacity(0.3),
                   Colors.green.withOpacity(0.016),
                 ], begin: Alignment.bottomCenter, end: Alignment.topCenter))
-            : BoxDecoration(),
+            : const BoxDecoration(),
         child: Icon(
           icon,
-          color: index == _selectedItemIndex ? Color(0XFF00B868) : Colors.grey,
+          color: index == _selectedItemIndex
+              ? const Color(0XFF00B868)
+              : Colors.grey,
         ),
       ),
     );
